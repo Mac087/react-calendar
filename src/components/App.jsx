@@ -2,13 +2,10 @@ import React, { Component } from 'react';
 
 import Calendar from "./Calendar";
 
-class App extends Component {
+
+class App extends React.Component {
   render() {
-    return (
-      <div>
-        <Calendar />
-      </div>
-    );
+    return <main><Calendar /></main>;
   }
 }
 
