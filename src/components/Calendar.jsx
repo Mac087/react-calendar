@@ -10,6 +10,7 @@ class Calendar extends React.Component {
 
   renderHeader() {
     const dateFormat = "MMMM YYYY";
+
     return (
       <div className="header row flex-middle">
         <div className="col col-start">
@@ -18,9 +19,7 @@ class Calendar extends React.Component {
           </div>
         </div>
         <div className="col col-center">
-          <span>
-            {dateFns.format(this.state.currentMonth, dateFormat)}
-          </span>
+          <span>{dateFns.format(this.state.currentMonth, dateFormat)}</span>
         </div>
         <div className="col col-end" onClick={this.nextMonth}>
           <div className="icon">chevron_right</div>
@@ -75,6 +74,7 @@ class Calendar extends React.Component {
             onClick={() => this.onDateClick(dateFns.parse(cloneDay))}
           >
             <span className="number">{formattedDate}</span>
+            <span className="bg">{formattedDate}</span>
           </div>
         );
         day = dateFns.addDays(day, 1);

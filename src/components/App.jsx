@@ -5,7 +5,21 @@ import Calendar from "./Calendar";
 
 class App extends React.Component {
   render() {
-    return <main><Calendar /></main>;
+    return (
+      <div class="App">
+        <header>
+          <div id="logo">
+            <span className="icon">date_range</span>
+            <span>
+              react<b>calendar</b>
+            </span>
+          </div>
+        </header>
+        <main>
+          <Calendar />
+        </main>
+      </div>
+    );
   }
 }
 
