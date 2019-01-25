@@ -42,24 +42,6 @@ body {
   background: var(--bg-color);
 }
 
-header {
-  display: block;
-  width: 100%;
-  padding: 1.75em 0;
-  border-bottom: 1px solid var(--border-color);
-  background: var(--neutral-color);
-}
-
-header #logo {
-  font-size: 175%;
-  text-align: center;
-  color: var(--main-color);
-  line-height: 1;
-}
-
-header #logo .icon {
-  padding-right: 0.25em;
-}
 
 main {
   display: block;
@@ -114,32 +96,6 @@ main {
   border: 1px solid var(--border-color);
 }
 
-.calendar .header {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 115%;
-  padding: 1.5em 0;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.calendar .header .icon {
-  cursor: pointer;
-  transition: 0.15s ease-out;
-}
-
-.calendar .header .icon:hover {
-  transform: scale(1.75);
-  transition: 0.25s ease-out;
-  color: var(--main-color);
-}
-
-.calendar .header .icon:first-of-type {
-  margin-left: 1em;
-}
-
-.calendar .header .icon:last-of-type {
-  margin-right: 1em;
-}
 
 .calendar .days {
   text-transform: uppercase;
@@ -167,7 +123,7 @@ main {
 
 .calendar .body .selected {
   border-left: 10px solid transparent;
-  border-image: linear-gradient(45deg, #1a8fff 0%, #53cbf1 40%);
+  border-image: linear-gradient(45deg, #16a085 0%, #16a085 40%);
   border-image-slice: 1;
 }
 
